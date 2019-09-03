@@ -75,7 +75,7 @@ public class EnemyHealth : MonoBehaviour
         // When a rigidbody is kinematic, the NavMesh will not recalculate.
         GetComponent <Rigidbody> ().isKinematic = true;
         isSinking = true;
-        //ScoreManager.score += scoreValue;
+        ScoreManager.score += scoreValue;
         Destroy (gameObject, 2f);
     }
 }
