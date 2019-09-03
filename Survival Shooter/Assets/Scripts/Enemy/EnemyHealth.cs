@@ -59,7 +59,7 @@ public class EnemyHealth : MonoBehaviour
     void Death ()
     {
         isDead = true;
-
+        // Allow player to move through enemy.
         capsuleCollider.isTrigger = true;
 
         anim.SetTrigger ("Dead");
@@ -72,6 +72,7 @@ public class EnemyHealth : MonoBehaviour
     public void StartSinking ()
     {
         GetComponent <UnityEngine.AI.NavMeshAgent> ().enabled = false;
+        // When a rigidbody is kinematic, the NavMesh will not recalculate.
         GetComponent <Rigidbody> ().isKinematic = true;
         isSinking = true;
         //ScoreManager.score += scoreValue;

@@ -935,6 +935,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenAttacks: 0.5
   attackDamage: 10
+--- !u!114 &829142598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829142589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9b9d14572410594cb85d40eedfb150c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  sinkSpeed: 2.5
+  scoreValue: 10
+  deathClip: {fileID: 8300000, guid: 1d3bfb9269f136947bf8ac164cace1ff, type: 3}
 --- !u!1 &895118296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1557,30 +1574,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7608532751676898976, guid: 8787caf3cc0b0ce40b080a08774fbd69,
+        type: 3}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 351652215}
+    - target: {fileID: 7608532751676898976, guid: 8787caf3cc0b0ce40b080a08774fbd69,
+        type: 3}
+      propertyPath: damageImage
+      value: 
+      objectReference: {fileID: 1935999612}
+    - target: {fileID: 1551732704, guid: 8787caf3cc0b0ce40b080a08774fbd69, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551732704, guid: 8787caf3cc0b0ce40b080a08774fbd69, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
+      value: 0.042678833
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551732704, guid: 8787caf3cc0b0ce40b080a08774fbd69, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
+      value: 0.021736145
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8787caf3cc0b0ce40b080a08774fbd69, type: 3}
---- !u!1 &7608532751676898975 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7608532751796765772, guid: 8787caf3cc0b0ce40b080a08774fbd69,
-    type: 3}
-  m_PrefabInstance: {fileID: 7608532751676898974}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7608532751676898976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7608532751676898975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 0
-  healthSlider: {fileID: 351652215}
-  damageImage: {fileID: 1935999612}
-  deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
-  flashSpeed: 5
-  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
